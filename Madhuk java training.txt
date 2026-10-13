@@ -1,33 +1,286 @@
-import java.util.Scanner;
-// Write and run Java online using this editor.
+1)import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out .print("Enter full name:");
+        String name=sc.nextLine();
+        sc.nextLine();
+
+        System.out.println("Enter roll number:");
+        int rollnum=sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("Enter department:");
+        String dept=sc.nextLine();
+
+        System.out.println("Enter percentage:");
+        float per=sc.nextFloat();
+
+        
+
+        System.out.println("full name :+name");
+        System.out.println("roll number:+rollnum"); 
+        System.out.println("department:dept");
+        System.out.println("percentage:+per");
+        
+
+        sc.close();
+
+    }
+}
+2)
+import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Employee ID:");
-        int id =sc.nextInt();
-    
-        System.out.println("Enter Age:");
-        int age=sc.nextInt(); 
-        sc.nextLine();
-    
-        System.out.println("Enter Branch:");
-        String branch=sc.nextLine();
+        System.out.println("hello java!.");
+        System.out.println("welcome to program");
+        System.out.println("my journey programming");    
+    }
+}
+3)
+import java.util.*;
 
-        System.out.println("Enter Salary:");
-        float salary=sc.nextFloat();
+class Main {
+    public static void main(String[] args) {
+        System.out.print("java is simple.");
+        System.out.print("java is power full");
         
+    }
+}
 
-        System.out.println("Enter Experience:");
-        int exp=sc.nextInt();
+4)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("collge nama:");
+        String name=sc.nextLine();
         
-        System.out .println("Employee ID:"+id);
-        System.out.println("Age:"+age);
-        System.out.println("Branch:"+branch);
-        System.out.println("Salary:"+salary);
-        System.out.println("Experience:"+exp);
+        System.out.print("department:");
+        String dept=sc.nextLine();
+
+        System.out.println("course");
+        String course=sc.nextLine();
+
+        System.out.println("college name:"+name);
+        System.out.println("department:"+dept);
+        System.out.println("course:"+course);
 
         sc.close();
         
     }
 }
+5)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("nama:");
+        String name=sc.nextLine();
+        
+        System.out.print("course:");
+        String course=sc.nextLine();
+
+        System.out.println("level");
+        String level=sc.nextLine();
+
+        System.out.println("name:"+name);
+        System.out.println("course:"+course);
+        System.out.println("level:"+level);
+
+        sc.close();
+        
+    }
+}
+6)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("student nama:");
+        String name=sc.nextLine();
+
+        System.out.println("age:");
+        int age=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("grade:");
+        String grade=sc.nextLine();
+
+        System.out.println("placement status:");
+        String pc=sc.nextLine();
+
+        System.out.println("student name:"+name);
+        System.out.println("age:"+age);
+        System.out.println("placement status:"+pc);
+
+        sc.close();
+        
+    }
+}
+7)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("population:");
+        int pop=sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("product price:");
+        int price=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("blood group symbol:");
+        String bgs=sc.nextLine();
+
+        System.out.println("account verified:");
+        boolean av=sc.nextBoolean();
+        sc.nextLine();
+
+        System.out.println("employee name:");
+        String name=sc.nextLine();
+
+        System.out.println("population:"+pop);
+        System.out.println("product price:"+price);
+        System.out.println("blood group symbol:"+bgs);
+        System.out.println("employee name:"+name);
+
+        sc.close();
+        
+    }
+}
+8)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+
+        System.out.println("patient name:");
+        String name=sc.nextLine();
+
+
+        System.out.println("patient id:");
+        int id=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("age:");
+        int age=sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("temperature:");
+        float temp=sc.nextFloat();
+        sc.nextLine();
+
+
+        System.out.println("admitted:");
+        boolean a=sc.nextBoolean();
+        sc.nextLine();
+
+        
+
+        System.out.println("paitent name:"+name);
+        System.out.println("patient id:"+id);
+        System.out.println("age:"+age);
+        System.out.println("temperature:"+temp);
+        System.out.println("admitted:"+a);
+
+        sc.close();
+        
+    }
+}
+9)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+
+        System.out.println("customer's name:");
+        String name=sc.nextLine();
+
+        System.out.println("movie name:");
+        String  mname=sc.nextLine();
+
+
+        System.out.println("ticket count:");
+        int count=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("ticket price:");
+        int price=sc.nextInt();
+        sc.nextLine();
+
+        
+
+        System.out.println("customer's name:"+name);
+        System.out.println("movie name:"+mname);
+        System.out.println("ticket count:"+count);
+        System.out.println("ticket price:"+price);
+
+
+        sc.close();
+        
+    }
+}
+10)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+
+        System.out.println("product name:");
+        String name=sc.nextLine();
+
+        System.out.println("product id:");
+        int  id=sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("price:");
+        int price=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("availability:");
+        String ava=sc.nextLine();
+
+        System.out.println("product name:"+name);
+        System.out.println("product id:"+id);
+        System.out.println("price:"+price);
+        System.out.println("availability:"+ava);
+
+        sc.close();
+    }
+}
+11)
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+        
+        System.out.print("user age:");
+        int age=sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("city:");
+        String city=sc.nextLine();
+
+        System.out.println("user age:"+age);
+        System.out.println("city:"+city);
+
+        sc.close();
+    
+ }   }
+
