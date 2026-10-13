@@ -1,0 +1,96 @@
+1)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int a=10;
+        String result=(a%2!=0)?"odd":"even";
+        
+        System.out.println(result);
+        
+    }
+}
+2)
+class Main {
+    public static void main(String[] args) {
+        int a=30;
+        int b=20;
+        String result=(a==b)?"equal":(a>b)?"a":"b";
+
+        System.out.println("Result:"+result);
+
+    
+    }
+}
+3)
+ class Main {
+    public static void main(String[] args) {
+        int n=-30;
+        String result=(n>0)?"positive":(n<0)?"negative":"zero";
+        System.out.println(result);
+    }
+}
+4)
+class Main {
+    public static void main(String[] args) {
+        int n=26;
+        String result=(n>18)?"eligible":"not eligible";
+        System.out.println(result);
+    }
+}
+5)
+ class Main {
+    public static void main(String[] args) {
+        int n=15;
+        
+        System.out.println((n%3==0&&n%5==0)?"divisible by both":"not divisible by both");
+    }
+}
+6)
+class main{
+    public static void main(String[] args) {
+     int m=15;
+        int h=90;
+        int r=2;
+        int biggest=(m>=h&&m>r)?m:(h>=r?h:r);
+        
+        System.out.println("Biggest="+biggest);
+    }
+}
+7)
+class main{
+    public static void main(String[] args) {
+     int m=-124;
+        
+        System.out.println((Math.abs(m%10)%2==0)?"yes":"no");
+    }
+}
+8)
+class main{
+    public static void main(String[] args) {
+     int m1=65;
+     int m2=90;
+     int m3=56;
+        
+        System.out.println((m1>=35&&m2>=35&&m3>=35)?"pass":"fail");
+    }
+}
+9)
+class main{
+    public static void main(String[] args) {
+     int amount=12000;
+     boolean premium=false;
+        
+        System.out.println((amount>=1000||premium)?"free delivery":"delivery charges apply");
+    }
+}
+10)
+class main{
+    public static void main(String[] args) {
+     double amount=2500;
+     double finalamount=(amount>=2000)?amount*0.90:amount;
+        
+        System.out.println("Final amoumt="+finalamount);
+    }
+}
