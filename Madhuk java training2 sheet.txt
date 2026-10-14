@@ -1,0 +1,129 @@
+1)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        System.out.println(n % 7 == 0 ? "Lucky" : "Unlucky");
+    }
+}
+2)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a == b ? "Same" : (a < b ? a : b));
+    }
+}
+3)import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+
+        System.out.println(
+            ch == 'a' || ch == 'e' || ch == 'i' ||
+            ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' ||
+            ch == 'O' || ch == 'U'
+            ? "Vowel" : "Consonant"
+        );
+    }
+}
+4)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int temp = sc.nextInt();
+
+        System.out.println(temp > 35 ? "Hot" :
+                           temp >= 20 ? "Normal" : "Cold");
+    }
+}
+5)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+
+        System.out.println(amount % 10 == 0 ?
+                           "Valid Amount" : "Invalid Amount");
+    }
+}
+6)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        System.out.println(n / 10 == n % 10 ?
+                           "Equal Digits" : "Different Digits");
+    }
+}
+7)import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        System.out.println(n >= 50 && n <= 100 ?
+                           "Inside Range" : "Outside Range");
+    }
+}
+8)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int salary = sc.nextInt();
+        int experience = sc.nextInt();
+
+        int bonus = experience >= 5 && salary < 50000 ? 5000 : 0;
+
+        System.out.println(bonus);
+    }
+}
+9)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        System.out.println(
+            a + b > c && a + c > b && b + c > a
+            ? "Valid Triangle" : "Invalid Triangle"
+        );
+    }
+}
+10)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        System.out.println(n == 0 ? "Zero" :
+            n > 0 ? (n % 2 == 0 ? "Positive Even" : "Positive Odd") :
+            (n % 2 == 0 ? "Negative Even" : "Negative Odd"));
+    }
+}
