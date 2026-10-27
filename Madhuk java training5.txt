@@ -1,0 +1,199 @@
+1)
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n;j++){
+                if (i == 1||i == n||
+                    j == 1||j == n){
+                    System.out.print("* ");
+                   } else {
+                    System.out.print("  ");
+                   }
+            }
+            System.out.println();
+        }
+    }
+}
+2)
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n;j++){
+
+                    System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+3)
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+
+                    System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+            System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+4)
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+
+                    System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+            System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}
+5)pyramid
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+
+                    System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+            System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+6)inverse pyramid
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=n;i>=1;i--){
+            for (int j=1;j<=n-i;j++){
+
+                    System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+            System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+7)
+import java.util.*;
+class main {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<n;i++){
+            if(n%i==0)
+                sum=sum+i;
+        }
+        if(sum==n){
+        System.out.println("perfect number");
+        }else{
+            System.out.println("not a perfect number");
+        }
+    }
+}
+8)
+import java.util.*;
+class main {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int temp=n,sum=0;
+        while (temp>0){
+            int digit=temp%10;
+            sum=sum+digit*digit*digit;
+            temp=temp/10;
+        }
+        if(sum==n){
+        System.out.println("Armstrong Number");
+        }else{
+            System.out.println("Not Armstrong Number");
+        }
+    }
+}
+9)
+import java.util.*;
+class main {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int square=n*n;
+        int sum=0;
+        while (square>0){
+            int digit=square%10;
+            sum=sum+digit;
+            square=square/10;
+        }
+        if(sum==n){
+        System.out.println("Neon Number");
+        }else{
+            System.out.println("Not Neon Number");
+        }
+    }
+}
+10)
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                count++;
+            }
+        }
+        if(count==2){
+        System.out.println("Prime Number");
+        }else{
+            System.out.println("Not a Prime Number");
+        }
+    }
+}
+11)
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+    }
+  }        
+}
+12)
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print("  ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+    }
+  }        
+}
