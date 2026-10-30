@@ -1,0 +1,548 @@
+
+1)append
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.append("java");
+        System.out.println(sb);
+    }
+}
+2)insert
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.insert(1,"i");
+        System.out.println(sb);
+    }
+}
+3)delete
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello world");
+        sb.delete(5,11);
+        System.out.println(sb);
+    }
+}
+4)deleteChatAt
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.deleteCharAt(1);
+        System.out.println(sb);
+    }
+}
+5)reverse
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+6)replace
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.replace(0,2,"te");
+        System.out.println(sb);
+    }
+}
+7)charAt
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        
+        System.out.println(sb.charAt(2));
+    }
+}
+8)setCharAt
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        sb.setCharAt(0,'t');
+        
+        System.out.println(sb);
+    }
+}
+9)length
+class Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        
+        System.out.println(sb.length());
+    }
+}
+10)toString
+clatoss Main {
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("Hello");
+        String s=sb.toString();
+        
+        System.out.println(s);
+    }
+}
+11) clearing spaces  in pharagraph
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String s=sc.nextLine();
+        StringBuilder sb=new StringBuilder(s);
+        for (int i=0;i<sb.length();i++){
+            if(sb.charAt(i)==' '){
+                sb.deleteCharAt(i);
+                i++;
+            }
+        }
+        System.out.println(sb);
+    }
+}
+12)deleting the first and last character
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a word:");
+        String s=sc.nextLine();
+        StringBuilder sb=new StringBuilder(s);
+        
+            if(sb.length()>=2){
+                sb.deleteCharAt(sb.length()-1);
+                sb.deleteCharAt(0);
+                System.out.println("Enter at least 3 characters");
+            }
+        
+        System.out.println(sb);
+    }
+} 
+13)reverse the last 3 characters in a word
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a word:");
+        String s=sc.nextLine();
+        StringBuilder sb=new StringBuilder(s);
+        
+            if(sb.length()>=3){
+                StringBuilder last=new StringBuilder(
+                    sb.substring(sb.length()-3)
+                    );
+                last.reverse();
+                sb.replace(sb.length()-3,sb.length(),last.toString());
+                System.out.println(sb);
+            }else{
+                System.out.println("Enter at least 3 character");
+                    
+            }
+
+    }
+} 
+14)bufferedreader
+import java.io.*;
+public class Main {
+    public static void main(String[] args) throws Exception{
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter your name:");
+        String name=br.readLine();
+        System.out.println("Welcome " +name);
+
+    }
+} 
+15)
+import java.io.*;
+public class Main {
+    public static void main(String[] args) throws Exception{
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter electricity units:");
+        int units=Integer.parseInt(br.readLine());
+        double bill;
+        if(units<0){
+            System.out.println("Invalid units");
+            return;
+        }
+        if(units<=100){
+            bill=units*2;
+        }else if(units<=200){
+            bill=(100*2)+(units-100)*3;
+        }else{
+            bill=(100*2)+(100*3)+(units-200)*5;
+            
+        }        
+        System.out.println("Electricity Bill:Rs."+bill);
+
+    }
+}   
+16)finding the even and odd number in a set in a set of give length
+import java.io.*;
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Starting Number: ");
+        int Start=Integer.parseInt(br.readLine());
+        System.out.println("Enter Ending Number: ");
+        int End=Integer.parseInt(br.readLine());
+        int even=0;
+        int odd=0;
+        for(int i=Start;i<=End;i++){
+            if(i % 2 ==0){
+            even++;
+            }else{
+            odd++;
+        }
+        }
+        System.out.println("call even : "+ even);
+        System.out.println("call odd: "+odd);
+    }
+}
+17)
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str);
+
+        for (int i = sb.length() - 1; i >= 0; i--) {
+            char ch = sb.charAt(i);
+
+            if ("aeiouAEIOU".indexOf(ch) != -1) {
+                sb.deleteCharAt(i);
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+18)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 1; i <= n; i++) {
+            String name = sc.nextLine();
+            sb.append(i).append(". ").append(name).append("\n");
+        }
+
+        System.out.print(sb);
+        sc.close();
+    }
+}
+19)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str);
+
+        for (int i = sb.length() - 1; i >= 0; i--) {
+            char ch = sb.charAt(i);
+
+            if (!Character.isLetterOrDigit(ch)) {
+                sb.deleteCharAt(i);
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+20)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        StringBuilder sb = new StringBuilder(sc.nextLine());
+
+        for (int i = 0; i < sb.length(); i++) {
+            if (sb.charAt(i) == ' ') {
+                sb.setCharAt(i, '-');
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+21)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        StringBuilder sb = new StringBuilder(sc.nextLine());
+
+        if (sb.length() > 0) {
+            sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
+            sb.setCharAt(sb.length() - 1,
+                Character.toUpperCase(sb.charAt(sb.length() - 1)));
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+22)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            if (i == 0 || str.charAt(i) != str.charAt(i - 1)) {
+                sb.append(str.charAt(i));
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+23)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder letters = new StringBuilder();
+        StringBuilder digits = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (Character.isDigit(ch)) {
+                digits.append(ch);
+            } else {
+                letters.append(ch);
+            }
+        }
+
+        letters.append(digits);
+        System.out.println(letters);
+        sc.close();
+    }
+}
+24)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            sb.append(str.charAt(i));
+
+            if (i < str.length() - 1) {
+                sb.append('*');
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+25)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str);
+
+        for (int i = sb.length() - 1; i >= 0; i--) {
+            if (i % 2 == 0) {
+                sb.deleteCharAt(i);
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+26)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] words = sc.nextLine().trim().split("\\s+");
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = words.length - 1; i >= 0; i--) {
+            sb.append(words[i]);
+
+            if (i > 0) {
+                sb.append(" ");
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+27)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String sentence = sc.nextLine();
+        String word = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(sentence);
+        String[] words = sb.toString().split("\\s+");
+        sb.setLength(0);
+
+        for (String w : words) {
+            if (!w.equals(word)) {
+                if (sb.length() > 0) {
+                    sb.append(" ");
+                }
+                sb.append(w);
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+28)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] words = sc.nextLine().trim().split("\\s+");
+        StringBuilder sb = new StringBuilder();
+
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                sb.append(Character.toUpperCase(word.charAt(0)));
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+29)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String word = sc.nextLine();
+        String prefix = sc.nextLine();
+        String suffix = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(word);
+        sb.insert(0, prefix);
+        sb.append(suffix);
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+30)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+
+        StringBuffer sb = new StringBuffer();
+        int max = Math.max(s1.length(), s2.length());
+
+        for (int i = 0; i < max; i++) {
+            if (i < s1.length()) {
+                sb.append(s1.charAt(i));
+            }
+
+            if (i < s2.length()) {
+                sb.append(s2.charAt(i));
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+31)
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        StringBuffer sb = new StringBuffer(sc.nextLine());
+
+        for (int i = 0; i < sb.length() - 4; i++) {
+            if (Character.isDigit(sb.charAt(i))) {
+                sb.setCharAt(i, 'X');
+            }
+        }
+
+        System.out.println(sb);
+        sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
